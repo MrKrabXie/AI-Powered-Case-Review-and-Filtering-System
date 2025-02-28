@@ -38,5 +38,20 @@ f. 对于不同细分分类的类别的体裁文章他们关键字，模型是�
 a.版权问题
 b.种族问题
 c.宗教问题
+---
 
 # AI-Powered-Case-Review-and-Filtering-System
+A comprehensive system for dynamic legal case review and filtering, powered by the Mistral 7B model running via Ollama. This project features:
+
+Political Sensitivity Filter: Immediate interception of politically sensitive content.
+Case Similarity Search: Retrieve the top 3 most relevant historical cases based on similarity.
+Dynamic Hint Generation: Inject historical cases and scene parameters for context-driven suggestions.
+Two-Dimensional Evaluation with Large Models: Scene scoring and distribution outputs.
+Tiered Processing:
+Normal Approval (Overall Score < 0.2)
+Time-Limited Modification (0.2 ≤ Overall Score < 0.6)
+Manual Review (Overall Score ≥ 0.6)
+Features include:
+
+Use of ChromaDB for storing manually reviewed cases from the past 3 months, prioritized by frequency of selection.
+Automated weekly creation of fine-tuning datasets, retaining key samples from each classification.
